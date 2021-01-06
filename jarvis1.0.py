@@ -21,7 +21,7 @@ from wikipedia.wikipedia import search
 
 
 engine = pyttsx3.init()
-wolframalpha_app_id = 'V95G9E-AVGER6EGVH'
+wolframalpha_app_id = '<YOUR API>'
 
 
 def speak(audio):
@@ -334,7 +334,7 @@ if __name__ == "__main__":
 
         elif 'news' in query:
             try:
-                jsonObj = urlopen("http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f3b399cb920c43318f9cc75f59170068")
+                jsonObj = urlopen("http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=<YOUR API>")
                 data = json.load(jsonObj)
                 i = 1
 
